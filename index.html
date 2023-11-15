@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1::first-line{
+            color: red;
+            
+        }
+        h2::first-line{
+            color: blueviolet;
+        } */
+
+
+        ul{
+            list-style: none;
+            width: 150px;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            position: relative;
+            padding-left: 30px;
+            margin: 10px 0px;
+        }
+        ul li::before{
+            content: "🍕 ";
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>food</li>
+        <li>food</li>
+        <li>food</li>
+        <li>food</li>
+        <li>food,ice cream, pizza</li>
+        <li>food</li>
+    </ul>
+    
+    
+</body>
+</html>

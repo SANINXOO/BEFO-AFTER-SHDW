@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   *{
+    margin: 0;
+    padding: 0;
+   }
+        .main{
+            width: 100%;
+            position: relative;
+        }
+        .main img{
+            width: 100%;
+            height: 100vh;
+        }
+        .content{
+            position: absolute;
+            bottom: 30px;
+            left: 500px;
+            width: 400px;
+            color: white;
+          
+        }
+        .content h2{
+            color: rgb(131, 161, 188);
+            margin-left: 100px;
+        }
+        .content p{
+            text-align: center;
+        }
+        .main::before{
+            content: '';
+            background: linear-gradient(0deg, rgba(10,10,10,1) 0%, rgba(43,45,46,0) 80%);
+            width: 100%;
+            position: absolute;
+            height: 30vh;
+            bottom: 0;
+        }
+        .main::after{
+            content: '';
+            background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(43,45,46,0) 80%);
+            width: 100%;
+            position: absolute;
+            height: 0vh;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <img src="/images/8E7DD082-F4D6-42F0-B2BC-86F0C5BA6655.jpeg" alt="">
+    <div class="content">
+        <h2>M U S T A N G</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni repudiandae molestias veritatis tempora cupiditate odio consectetur ad maiores molestiae repellat? .</p>
+    </div>
+</div>
+</body>
+</html>
